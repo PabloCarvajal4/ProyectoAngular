@@ -1,4 +1,4 @@
-
+<button nz-button nzType="primary" >Ingresar un Nuevo Registro</button>
 <br><br>
 <nz-table #basicTable [nzData]="listOfData">
   <thead>
@@ -21,7 +21,8 @@
       <td>
         <a>Action 一 {{ data.name }}</a>
         <nz-divider nzType="vertical"></nz-divider>
-        <a>Delete</a>
+        <a  nzCancelText="No" nzOkText="Si"> Borrar
+        </a>
       </td>
     </tr>
   </tbody>
